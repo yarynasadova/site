@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Sample</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тест</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Чи готові Ви завести прісноводну черепаху</h2>
+        <form method="POST" action="https://formspree.io/yaryna.sadova@gmail.com">
+            <label for="user-name">Ваше ім'я:</label>
+            <input id="user-name" type="text" name="user-name" placeholder="User Name" required>
+            <br>
+            <label>Ваш Email: 
+                <input type="email" name="user-email"
+                  placeholder="User Email" required>      
+            </label>
+            <br>
+            <label>
+                Питання1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question"
+                 value="yes">Так
+            </label>
+            <label>
+                <input type="radio" name="question"
+                 value="no">Ні
+                 </label>
+            <label>
+                <input type="radio" name="question"
+                 value="dont know">Незнаю
+            </label>
+            <br>
+            <label>
+                Питання2
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question2"
+                 value="yes">Так
+            </label>
+            <label>
+                <input type="radio" name="question2"
+                 value="no"> Ні
+            </label>
+            <label>
+                <input type="radio" name="question2"
+                 value="dont know"> Незнаю
+            </label>
+            <br>
+            Питання3
+            <br>
+            <label>
+                <input type="radio" name="question3"
+                 value="yes">Так
+            </label>
+            <label>
+                <input type="radio" name="question3"
+                 value="no"> Ні
+            </label>
+            <label>
+                <input type="radio" name="question3"
+                 value="dont know"> Незнаю
+                 </label>
+            <label>
+                <input type="radio" name="question3"
+                 value="other"> Ваш варіант <input type="text">
+                
+            </label>
+            <br>
+
+            <label>
+                Питання 4. 
+                <br>
+                Оберіть необхідні пристрої для акваріума:
+                <br>
+<select name="courses[]" size="5" multiple="multiple">
+    <option value="ultraviolet lamp">ультрафіолетова лампа</option>
+    <option value="heating lamp">обігрівальна лампа</option>
+    <option value="lamp">лампа</option>
+    <option value="heater for water">обігрівач для води</option>
+    <option value=" thermometer">термометр</option>
+    <option value="filter">фільтр</option>
+</select></p>
+            </label>
+            <label>
+                Стать:
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="gender"
+                 value="male">Чоловік
+            </label>
+            <label>
+                <input type="checkbox" name="gender"
+                 value="female"> Жінка
+            </label>
+            <label>
+                <input type="checkbox" name="gender"
+                 value="other"> Інший
+            </label>
+            <br>
+
+            <br>
+            <label>Ваше повідомлення:
+                <textarea name="message" placeholder="Message"></textarea>
+            </label>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </section>
+</body>
+
+</html>
